@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Talabipad - Login</title>
+<style>
+    body {
+        background: #dae0e6 !important;
+        margin-top: 75px !important;
+    }
+
+    .form-control {
+        margin-bottom: 5px;
+    }
+    </style>
+{% endblock %}
+
+{%block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Search Posts
+                    <br>
+                    <br>
+                    {{msg}}
+                </div>
+                <div class="card-body">
+            <form class="form" action="/search" method="POST">
+                <input class="form-control" name="search" type="text" placeholder="Search...">
+                <br>
+                <button type="submit" class="btn btn-primary">Search</button>
+                <!--<a class="nav-iten btn btn-outline-primary mx-2" href="/">Search</a> -->
+            </form>
+        </div>
+        <div class="col-md-4">
+    </div>
+</div>
+
+{% endblock %}

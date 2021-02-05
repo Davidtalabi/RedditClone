@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Welcome to Talabipad</title>
+<style>
+    body {
+        background: #dae0e6 !important;
+        margin-top: 75px !important;
+    }
+
+
+</style>
+{% endblock %}
+
+{% block body %}
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light style=" style="background-color: #fff !important;">
+    <div class="container"> 
+        <a class="navbar-brand" href="/">Welcome to Talabipad {{ loggedinaccount }}!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <form class="mx-2 my-auto d-inline w-100" style="margin-left: 80px !important; margin-right: 60px !important;">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+             <a class="nav-iten btn btn-outline-primary mx-2" href="/profile">View Profile</a>
+             <a class="nav-iten btn btn-outline-primary mx-2" href="/">Home</a> 
+             <a class="nav-iten btn btn-outline-primary mx-2" href="/logout">Log out</a>
+             <a class="nav-iten btn btn-outline-primary mx-2" href="/search">Search</a> 
+            </div> 
+        </div> 
+    </div>
+    </nav>
+
+    <!---
+    <h2>Profile Page</h2>
+<div>
+    <p>Your account details are below:</p>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td>{{ userprofile['username'] }}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ userprofile['email'] }}</td>
+        </tr>
+        <tr>
+            <td>Date Created:</td>
+            <td>{{ userprofile['date_created'] }}</td>
+        </tr>
+    </table>
+</div>
+-->
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container">
+  <h1>u/{{ userprofile['username'] }}</h1>
+  <p class="title">Email: {{ userprofile['email'] }}</p>
+  <p class="title">Date Created: {{ userprofile['date_created'] }}</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+{% for postedbys in postedbys %}
+<br>
+<br>
+<br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-header">
+                        <strong>
+                            <button class="btn btn-light btn-sm">
+                                <i class="fas fa-arrow-up"></i>
+                            </button>
+                            12k
+                            <button class="btn btn-light btn-sm">
+                                <i class="fas fa-arrow-down"></i>
+                            </button>
+                        </strong> t/Talabipad <span class="text-muted" style="font-size: 10pt;"> Posted by u/{{ postedbys[0] }} at {{ postedbys[3] }}</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">  {{postedbys[1]}} </h5>
+                            <p class="card-text">
+                                {{ postedbys[2] }}
+                            </p>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <a href="" class="btn btn-light btn-sm"><i class="fas fa-comment"></i> 0 Comments </a>
+                                <a href="" class="btn btn-light btn-sm"><i class="fas fa-share"></i> Share </a>
+                                </div>
+                                </div>
+                                </div>
+                                <br>
+                                <br>
+                                
+                                <br>
+                         </div>
+                         </div>
+                         {% endfor %}
+
+    {% endblock %}
+
+

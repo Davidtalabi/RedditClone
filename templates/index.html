@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Welcome to Talabipad</title>
+<style>
+    body {
+        background: #dae0e6 !important;
+        margin-top: 75px !important;
+    }
+
+
+
+
+
+</style>
+{% endblock %}
+
+{% block body %}
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light style=" style="background-color: #fff !important;">
+<div class="container"> 
+    <a class="navbar-brand" href="/">Welcome to Talabipad {{ loggedinaccount }}!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<form class="mx-2 my-auto d-inline w-100" style="margin-left: 80px !important; margin-right: 60px !important;">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+</form>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+        <a class="nav-iten btn btn-outline-primary mx-2" href="/profile">View Profile</a>
+        <a class="nav-iten btn btn-outline-primary mx-2" href="/">Home</a> 
+        <a class="nav-iten btn btn-outline-primary mx-2" href="/logout">Log out</a> 
+        <a class="nav-iten btn btn-outline-primary mx-2" href="/search">Search</a> 
+        </div> 
+    </div> 
+</div>
+</nav>
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-header">
+                    <strong>
+                        <button class="btn btn-light btn-sm">
+                            <i class="fas fa-arrow-up"></i>
+                        </button>
+                        12k
+                        <button class="btn btn-light btn-sm">
+                            <i class="fas fa-arrow-down"></i>
+                        </button>
+                    </strong> r/Talabipad <span class="text-muted" style="font-size: 10pt;"> Posted by u/DavidTalabi 6 hours ago</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"> Subscribe to Davidtalabi </h5>
+                        <p class="card-text">
+                            Hello my name is david talabi welcome to Talabipad {{ usernames }}
+                        </p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="" class="btn btn-light btn-sm"><i class="fas fa-comment"></i> 0 Comments </a>
+                            <a href="" class="btn btn-light btn-sm"><i class="fas fa-share"></i> Share </a>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">r/Popular</h5>
+                                            <p class="card-text">
+                                                This is popular!
+                                            </p>
+                                            <a href="http://127.0.0.1:5000/newpost" class="btn btn-primary btn-block">Create Post</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div> -->
+
+
+
+
+
+<!--     {% for usernames in usernames %}
+    <div class="row">
+        <div class="col-md-5">
+            <h3>{{ usernames }}</h3>
+        </div>
+    </div>
+    <hr>
+{% endfor %} -->
+<div class="container">
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">t/Home</h5>
+                    <p class="card-text">
+                        Popular posts of the day
+                    </p>
+                    <a href="http://127.0.0.1:5000/newpost" class="btn btn-primary btn-block">Create Post</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% for usernames in usernames %}
+<br>
+<br>
+<br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-header">
+                        <strong>
+                            <button class="btn btn-light btn-sm">
+                                <i class="fas fa-arrow-up"></i>
+                            </button>
+                            12k
+                            <button class="btn btn-light btn-sm">
+                                <i class="fas fa-arrow-down"></i>
+                            </button>
+                        </strong> t/Talabipad <span class="text-muted" style="font-size: 10pt;"> Posted by u/{{ usernames[2] }} at {{ usernames[3] }}</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">  {{usernames[0]}} </h5>
+                            <p class="card-text">
+                                {{ usernames[1] }}
+                            </p>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <a href="" class="btn btn-light btn-sm"><i class="fas fa-comment"></i> 0 Comments </a>
+                                <a href="" class="btn btn-light btn-sm"><i class="fas fa-share"></i> Share </a>
+                                </div>
+                                </div>
+                                </div>
+                                <br>
+                                <br>
+                                
+                                <br>
+                         </div>
+                         </div>
+                         {% endfor %}
+                         
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
+                         
+
+
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Talabipad - New Post</title>
+<style>
+    body {
+        background: #dae0e6 !important;
+        margin-top: 75px !important;
+    }
+
+    .form-control {
+        margin-bottom: 5px;
+    }
+    </style>
+{% endblock %}
+
+{%block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    New Post
+                </div>
+                <div class="card-body">
+            <form class="form" action="/newpost" method="POST">
+                <input class="form-control" name="title" type="text" placeholder="Title">
+                <input class="form-control" name="post" type="text" placeholder="Post">
+                <br>
+                <button type="submit" class="btn btn-primary">Publish Post</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+    </div>
+</div>
+
+{% endblock %}
