@@ -18,7 +18,7 @@ Posts by users are published to the public forum and to their user profiles.
 # User Profile displays all their posts
 ![alt text](https://github.com/Davidtalabi/RedditClone/blob/main/Profile.PNG)
 
-# Accounts are stored in our mysql database and are automatically salted and hashed for security reasons
+# Accounts are stored in our mysql database and passwords are coded to be automatically salted and hashed for security reasons
 ![alt text](https://github.com/Davidtalabi/RedditClone/blob/main/sql1.PNG)
 
 # Fully functional search feature allows you to search posts by title and contents
@@ -30,6 +30,6 @@ Posts by users are published to the public forum and to their user profiles.
 
 
 
-# Coming Soon - Messaging System, Upvote/Downvote System
+# Coming Soon - Messaging System, Upvote/Downvote System, Subreddit System
 
 
