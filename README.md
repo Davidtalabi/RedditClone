@@ -1,5 +1,5 @@
 # RedditClone
-Welcome to Talabipad! A full stack clone of reddit written in Python with Flask web framework and MySql (SQLAlchemy)
+Welcome to Talabipad! A RESTful full stack clone of reddit written in Python with Flask web framework and MySql (SQLAlchemy)
 
 User must create an account and can post to the public forum, search for specific posts, view their profile/other users profiles (which include all of their posts) just like reddit.
 
