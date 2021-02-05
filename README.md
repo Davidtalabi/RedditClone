@@ -27,6 +27,6 @@ Posts by users are published to the public forum and to their user profiles.
 
 
 
-# Coming Soon - Messaging System, Upvote/Downvote System,
+# Coming Soon - Messaging System, Upvote/Downvote System
 
 
