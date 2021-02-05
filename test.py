@@ -3,7 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://b263a92eebff95:d872a629@us-cdbr-east-03.cleardb.com/eroku_634870331b65831'
+#david - ive commented out my uri for security purposes
+app.config['SQLALCHEMY_DATABASE_URI']='INSERT YOUR uri HERE'
 db=SQLAlchemy(app)
 
 class User(db.Model):
