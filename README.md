@@ -18,3 +18,15 @@ Posts by users are published to the public forum and to their user profiles.
 # User Profile displays all their posts
 ![alt text](https://github.com/Davidtalabi/RedditClone/blob/main/Profile.PNG)
 
+# Fully functional search feature allows you to search posts by title and contents
+![alt text](https://github.com/Davidtalabi/RedditClone/blob/main/Search.PNG)
+
+
+
+
+
+
+
+# Coming Soon - Messaging System, Upvote/Downvote System,
+
+
