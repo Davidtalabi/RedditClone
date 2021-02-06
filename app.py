@@ -7,7 +7,8 @@ from config import DevelopmentConfig
 from sqlalchemy import text
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session,sessionmaker
-engine = create_engine('mysql://b263a92eebff95:d872a629@us-cdbr-east-03.cleardb.com/heroku_634870331b65831')
+#must add your engine here, i've omitted mine for secruity purposes
+engine = create_engine('....')
 database=scoped_session(sessionmaker(bind=engine))
 
 app = Flask(__name__)
