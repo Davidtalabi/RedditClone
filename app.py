@@ -7,7 +7,7 @@ from config import DevelopmentConfig
 from sqlalchemy import text
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session,sessionmaker
-#must add your engine here, i've omitted mine for secruity purposes
+#must add your engine here, i've omitted mine for security purposes
 engine = create_engine('....')
 database=scoped_session(sessionmaker(bind=engine))
 
